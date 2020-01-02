@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<title>Marathon</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- js -->
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!-- banner -->
+<div class='banner'>
+  		<div class="container" >
+
+  			<div class="header">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m38!1m12!1m3!1d14026.972196199195!2d77.51523428972075!3d28.487283929310042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m23!3e2!4m5!1s0x390cea86cbd1310b%3A0xba25d8bfadc96bb5!2sCity%20Park%20-%20Parking%20Lot%2C%20Block%20B%2C%20Nawada%2C%20Greater%20Noida%2C%20Uttar%20Pradesh!3m2!1d28.474078499999997!2d77.5198417!4m3!3m2!1d28.4865262!2d77.5071844!4m3!3m2!1d28.501320699999997!2d77.5353691!4m3!3m2!1d28.4862172!2d77.5399106!4m3!3m2!1d28.474306499999997!2d77.51978369999999!5e0!3m2!1sen!2sin!4v1577943429227!5m2!1sen!2sin" width="1280" height="980" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  				<div class="w3_menu">
+  					<div class="mobile-nav-button">
+  						<div class="mobile-nav-button__line"></div>
+  						<div class="mobile-nav-button__line"></div>
+  						<div class="mobile-nav-button__line"></div>
+  					</div>
+  					<nav class="mobile-menu">
+  						<ul>
+  							<li ><a href="/">Home</a></li>
+  							<li><a href="form">Register</a></li>
+                <li><a href="routemap" class="active">Route Map</a></li>
+                <li><a href="sponsors">Sponsors</a></li>
+  						</ul>
+  					</nav>
+  				</div>
+  				<div class="clearfix"> </div>
+  			</div>
+  		</div>
+</div>
+  <!-- //banner -->
+
+<script>
+	$(document).ready(function () {
+	  $('.mobile-nav-button').on('click', function() {
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");
+
+	  $('.mobile-menu').toggleClass('mobile-menu--open');
+	  return false;
+	});
+	});
+</script>
+<!-- //menu -->
+</body>
