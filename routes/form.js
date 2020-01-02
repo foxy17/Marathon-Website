@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Register = require('../models/Register');
+const Register = require('../models/form');
 var moment = require('moment');
 var today = new Date();
 // Welcome Page
