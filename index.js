@@ -40,6 +40,6 @@ app.get('/sponsors',function(req,res){
 return res.render('comingsoon');
 });
 
-app.listen( process.env.PORT|| 8081, function() {
+app.listen(8080, function() {
   console.log('Server started on port 3000...' + process.env.PORT)
 });
