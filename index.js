@@ -43,16 +43,3 @@ return res.render('comingsoon');
 app.listen( process.env.PORT|| 3000, function() {
   console.log('Server started on port 3000...' + process.env.PORT)
 });
-ngrok.connect({
-    proto : 'http',
-    addr : 3000,
-
-}, (err, url) => {
-    if (err) {
-        console.error('Error while connecting Ngrok',err);
-        return new Error('Ngrok Failed');
-    } else {
-        console.log('Tunnel Created -> ', url);
-        console.log('Tunnel Inspector ->  http://127.0.0.1:4040');
-    }
-});

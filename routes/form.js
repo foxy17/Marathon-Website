@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
 });
 router.post('/', (req, res) => {
 let register=new Register;
+var error="Person With This Email Is Already Registered"
 var form = {
   fname:req.body.fname,
   sname:req.body.sname,
@@ -25,19 +26,31 @@ var form = {
   register.date=today;
   register.bio=req.body.bio,
   register.category=req.body.category;
-  register.save(function(err){
-        if(err){
-            console.log(err);
-            console.log(form);
-            res.render('register',{error:'1',form:form});
+  register.findOne({email: req.body.email}, function(err, user){
+     if(user) {
+       res.render('register', {
+         form:form,
+         error:error
+          });
+     }
+     else {
+       register.save(function(err){
+             if(err){
+                 console.log(err);
+                 console.log(form);
+                 res.render('register',{error:'1',form:form});
 
-        }
-        else{
-          console.log(form);
-          console.log('Subbmited');
-          res.render('sucess');
-        }
-    })
+             }
+             else{
+               console.log(form);
+               console.log('Subbmited');
+               res.render('sucess');
+             }
+         })
+       }
+
+     });
+
 
 
 });
