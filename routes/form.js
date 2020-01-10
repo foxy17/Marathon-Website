@@ -19,21 +19,7 @@ var form = {
   category:req.body.category,
   bio:req.body.bio,
        };
-  register.fname=req.body.fname;
-  register.sname=req.body.sname;
-  register.number=req.body.number,
-  register.email=req.body.email;
-  register.date=today;
-  register.bio=req.body.bio,
-  register.category=req.body.category;
-  register.findOne({email: req.body.email}, function(err, user){
-     if(user) {
-       res.render('register', {
-         form:form,
-         error:error
-          });
-     }
-     else {
+
        register.save(function(err){
              if(err){
                  console.log(err);
@@ -46,13 +32,11 @@ var form = {
                console.log('Subbmited');
                res.render('sucess');
              }
-         })
+         });
        }
 
-     });
 
 
 
-});
 
 module.exports = router;
