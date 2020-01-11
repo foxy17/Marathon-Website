@@ -10,12 +10,12 @@ const Register = new mongoose.Schema({
   },
   bio: {
     type: String,
-  
+
     default:'None'
   },
   email: {
     type: String,
-    required: true
+    default:"noemail@gmail.com"
   },
   category: {
     type: String,
