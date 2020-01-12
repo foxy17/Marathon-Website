@@ -60,7 +60,7 @@
 			</div>
 		</div>
 
-    <form  method="POST" id="registrationform">
+    <form  method="POST" id="registrationform"  onsubmit="myButton.disabled = true; return true;">
       <h1>Register</h1>
 
 
@@ -94,7 +94,7 @@
        <label class="" for="bio">Any medical condition to be noted ?:</label>
        <textarea style="resize: none;" name="bio" id="bio" > </textarea>
 
-        <button type='submit',value='Submit' style="font-size : 35px;width: 100%;">Register</button>
+        <button type='submit',value='Submit' name="myButton" style="font-size : 35px;width: 100%;">Register</button>
     </form>
 
 <!-- //banner -->
