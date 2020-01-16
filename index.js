@@ -36,6 +36,9 @@ return res.render('home');
 app.get('/routemap',function(req,res){
 return res.render('maps');
 });
+app.get('/sucess',function(req,res){
+return res.render('sucess');
+});
 app.get('/sponsors',function(req,res){
 return res.render('comingsoon');
 });
