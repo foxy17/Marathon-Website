@@ -35,7 +35,7 @@ var form = {
         else{
           console.log(form);
           console.log('Subbmited');
-          res.render('sucess');
+          res.redirect('sucess');
         }
     })
 

@@ -6,7 +6,7 @@ const Register = new mongoose.Schema({
   },
   sname: {
     type: String,
-    required: true
+default:" "
   },
   bio: {
     type: String,
