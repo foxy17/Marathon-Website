@@ -25,19 +25,19 @@ var form = {
   register.date=today;
   register.bio=req.body.bio,
   register.category=req.body.category;
-  register.save(function(err){
-        if(err){
-            console.log(err);
-            console.log(form);
-            res.render('register',{error:'1',form:form});
-
-        }
-        else{
-          console.log(form);
-          console.log('Subbmited');
-          res.redirect('sucess');
-        }
-    })
+  // register.save(function(err){
+  //       if(err){
+  //           console.log(err);
+  //           console.log(form);
+  //           res.render('register',{error:'1',form:form});
+  //
+  //       }
+  //       else{
+  //         console.log(form);
+  //         console.log('Subbmited');
+  //         res.redirect('sucess');
+  //       }
+  //   })
 
 
 });

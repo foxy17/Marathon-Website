@@ -52,7 +52,7 @@
 							<li><a href="/">Home</a></li>
 							<li class="active"><a href="form">Register</a></li>
               <li><a href="routemap">Route Map</a></li>
-              <li><a href="sponsors">Sponsors</a></li>
+
 						</ul>
 					</nav>
 				</div>
@@ -60,42 +60,41 @@
 			</div>
 		</div>
 
-    <form  method="POST" id="registrationform"  onsubmit="myButton.disabled = true; return true;">
-      <h1>Register</h1>
+    <style>
+         .blink {
+         animation: blinker 0.6s linear infinite;
+         color: #ff0000;
+         font-size: 30px;
+         font-weight: bold;
+         font-family: sans-serif;
+         }
+         @keyframes blinker {
+         50% { opacity: 0; }
+         }
+         .blink-one {
+         animation: blinker-one 1s linear infinite;
+         }
+         @keyframes blinker-one {
+         0% { opacity: 0; }
+         }
+         .blink-two {
+         animation: blinker-two 1.4s linear infinite;
+         }
+         @keyframes blinker-two {
+         100% { opacity: 0; }
+         }
+       </style>
+    <!-- banner-bottom -->
+    <fieldset>
+      <div class="banner-bottom" style="background:rgba(300, 300, 300, 1);">
+        <div class="container">
+          <div class="agileits_banner_bottom">
+            <h1><span class="blink"> Online registrations closed.</span> </h1>
+            <p><b style=" font-size: 25px;color: #000000 ;">Please report to City Park, Alpha-2 at 8:00am onward on 19th January 2020 for On-The-Spot Registrations.</b>
 
-
-      <fieldset>
-        <!-- Section 1 -->
-        <legend><span class="section">1</span>Your Basic Info</legend>
-        <label class="" for="name">First Name:</label>
-        <input type="text" name="fname" id="namee" required />
-
-        <label class="" for="name">Surname:</label>
-        <input type="text" name="sname" value="" id="surname" required />
-
-        <label class="" for="number">Contact Number:</label>
-        <input type="text" name="number" value="" id="number" placeholder="eg: 1234567890" required />
-
-        <label class="" for="email">Email( OPTIONAL ):</label>
-        <input type="email" name="email" value="" id="email"  />
-
-      </fieldset>
-
-      <fieldset>
-        <!-- section 2 -->
-        <legend><span class="section">2</span>About Yourself</legend>
-
-        <label>Category:</label>
-        <input type="radio" name="category" value="O" required> Open Elite<br>
-       	<input type="radio" name="category" value="S"> Senior Citizens
-
-           <br /><br />
-
-       <label class="" for="bio">Any medical condition to be noted ?:</label>
-       <textarea style="resize: none;" name="bio" id="bio" > </textarea>
-
-        <button type='submit',value='Submit' name="myButton" style="font-size : 35px;width: 100%;">Register</button>
-    </form>
+          </div>
+        </div>
+      </div>
 
 <!-- //banner -->
 <!---728x90--->
