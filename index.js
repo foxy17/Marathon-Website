@@ -5,7 +5,7 @@ var app=express()
 const mongoose = require('mongoose');
 const ngrok = require('ngrok');
 
-mongoose.connect('mongodb+srv://arnav:subject17@cluster0-rwjdn.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect('YOURMONGOPROFILE', {useNewUrlParser: true,useUnifiedTopology: true});
    mongoose.connection.once('open', function(){
      console.log('Conection has been made!');
    }).on('error', function(error){
